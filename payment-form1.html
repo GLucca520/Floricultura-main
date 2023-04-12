@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de compras</title>
+    <link rel="stylesheet" href="payment-form1.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <h1 id="title">Minha cesta</h1>
+
+    <form action="#" method="post">
+
+        <div id="info">
+            <span>produto</span>
+            <span>nome</span>
+            <span>qtd.</span>
+            <span>preço</span>
+        </div>
+        <hr>
+        <!-- Informações do produto -->
+        <div id="product-info">
+            <img id="img-product" src="https://source.unsplash.com/random" alt="">
+            <div id="product-data">
+                <span id="name">Girassol</span>
+                <span id="unit">1</span>
+                <span id="price">R$80,00</span>
+            </div>
+        </div>
+        <!-- Consultar frete -->
+        <div id="frete">
+            <span id="valor-frete-title">Consulte o valor do frete</span>
+            <div id="cep">
+                <input id="search-cep" type="search" value="CEP">
+
+                <button id="submit" type="submit" name="consultarCEP" value="consultarCEP">OK</button>
+                <a href="#" id="cep-desconhecido">não sei meu cep</a>
+            </div>
+
+        </div>
+        <hr>
+        <div id="endereco-entrega">
+            <span id="title-deliver">Endereço para entrega</span>
+            <div class="grid-container">
+                <div class="grid-item"> <input type="text" value="CEP"></div>
+                <div class="grid-item"> <input type="text" value="Número"></div>
+                <div class="grid-item"> <input type="text" value="Celular"></div>
+                <div class="grid-item"> <input type="text" value="Logradouro"></div>
+                <div class="grid-item"> <input type="text" value="Complemento"></div>
+                <div class="grid-item"> <input type="email" value="Email"></div>
+            </div>
+        </div>
+        <hr>
+        <div id="opcoes-entrega">
+            <span id="opcoes-deliver">Opções de entregas</span>
+            <div class="row">
+                <div class="card receba-hoje">
+                    <input type="radio" name="webmaster" value="sim" /> Receba hoje mesmo<br />
+                </div>
+
+                <div class="card receba-3-dias">
+                    <input type="radio" name="webmaster" value="sim" /> Receba em até 3 dias úteis<br />
+                </div>
+
+                <div class="card retire-hoje">
+                    <input type="radio" name="webmaster" value="sim" /> Retirada em loja em até 2h<br />
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="payment">
+            <div id="method-payment">
+
+                <div id="credit-card">
+                    <img id="img-credit-card" src="./img/credit-card.png" alt="">
+                    <span>cartão de crédito</span>
+                </div>
+
+                <div id="in-store">
+                    <img id="img-in-store" src="./img/shop.png" alt="">
+                    <span>pague na loja</span>
+                </div>
+
+                <div id="pix">
+                    <img id="img-pix" src="./img/pix.png" alt="">
+                    <span id="name-pix">pix</span>
+                </div>
+            </div>
+
+            <div id="dados-cartao">
+                <div class="grid-container">
+                    <div class="grid-item"> <input type="text" value="Número do cartão"></div>
+                    <div class="grid-item"> <input type="text" value="Validade"></div>
+                    <div class="grid-item"> <input type="text" value="Nome no cartão"></div>
+                    <div class="grid-item"> <input type="text" value="CVV"></div>
+                </div>
+            </div>
+
+            <span id="parcelas-titulo">Número de parcelas</span>
+            <select name="valores" id="valores">
+                <option value="1x">1x de R$00,00</option>
+                <option value="2x">2x de R$00,00</option>
+                <option value="3x">3x de R$00,00</option>
+                <option value="4x">4x de R$00,00</option>
+                <option value="5x">5x de R$00,00</option>
+                <option value="6x">6x de R$00,00</option>
+            </select>
+            <input id="continuar" type="submit" value="Continuar">
+
+        </div>
+    </form>
+</body>
+
+</html>
